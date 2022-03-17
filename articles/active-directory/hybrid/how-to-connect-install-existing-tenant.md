@@ -32,7 +32,7 @@ If Azure AD finds an object where the attribute values are the same for an objec
 > Since all attributes in Azure AD are going to be overwritten by the on-premises value, make sure you have good data on-premises. For example, if you only have managed email address in Microsoft 365 and not kept it updated in on-premises AD DS, then you lose any values in Azure AD/Microsoft 365 not present in AD DS.
 
 > [!IMPORTANT]
-> If you use password sync, which is always used by express settings, then the password in Azure AD is overwritten with the password in on-premises AD. If your users are used to manage different passwords, then you need to inform them that they should use the on-premises password when you have installed Connect.
+> If you use password hash sync, which is always used by express settings, then the password in Azure AD is overwritten with the password in on-premises AD. If your users are used to manage different passwords, then you need to inform them that they should use the on-premises password when you have installed Connect.
 
 The previous section and warning must be considered in your planning. If you have made many changes in Azure AD not reflected in on-premises AD DS, then you need to plan for how to populate AD DS with the updated values before you sync your objects with Azure AD Connect.
 
